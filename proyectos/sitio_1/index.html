@@ -1,149 +1,176 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Gabriela - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Estilos personalizados adicionales para no parecer plantilla */
-			body {
-				background-color: #f4f4f9;
-				color: #2c2c34;
-				font-family: 'Arial', sans-serif;
-			}
-			#nav a.icon {
-				color: #5252ad;
-			}
-			.panel.intro header h1 {
-				font-size: 2.5em;
-				margin-bottom: 0;
-			}
-			.panel p {
-				line-height: 1.6;
-			}
-			/* Estilos adicionales para personalizar aún más */
-			.custom-section {
-				padding: 2em;
-				background: #e8e8ff;
-				border-radius: 8px;
-				margin-top: 2em;
-			}
-		</style>
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="es">
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarzamora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
+6.6.0/css/all.min.css">
+</head>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#" class="icon solid fa-home"><span>Inicio</span></a>
-						<a href="#projects" class="icon solid fa-briefcase"><span>Proyectos</span></a>
-						<a href="#about" class="icon solid fa-user"><span>Sobre Mí</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contacto</span></a>
-					</nav>
+<body>
+    <header class="bloque1">
+        <nav>
 
-				<!-- Main -->
-					<div id="main">
 
-						<!-- Intro -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>Gabriela Torres</h1>
-									<p>Explorando la innovación digital con pasión y creatividad.</p>
-								</header>
-								<a href="#projects" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>Mira mis proyectos</span></span>
-									<img src="images/me.jpg" alt="Foto de Gabriela" />
-								</a>
-							</article>
+            <div class="hamburger" id="hamburger">
+                &#9776;
 
-						<!-- Projects -->
-							<article id="projects" class="panel">
-								<header>
-									<h2>Proyectos Recientes</h2>
-								</header>
-								<p>
-									Cada proyecto es un reto único que me apasiona resolver con creatividad y estrategia.
-								</p>
-								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/project1.jpg" alt="Proyecto 1"></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/project2.jpg" alt="Proyecto 2"></a>
-										</div>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/project3.jpg" alt="Proyecto 3"></a>
-										</div>
-									</div>
-								</section>
-								<section class="custom-section">
-									<h3>Detalles Especiales</h3>
-									<p>
-										Algunos proyectos incluyen tecnologías emergentes como inteligencia artificial, diseño accesible y desarrollo con impacto social.
-									</p>
-								</section>
-							</article>
+            </div>
 
-						<!-- About -->
-							<article id="about" class="panel">
-								<header>
-									<h2>Sobre Mí</h2>
-								</header>
-								<p>
-									Me especializo en desarrollar soluciones digitales intuitivas y centradas en el usuario. Mi experiencia abarca desde el diseño hasta la implementación técnica.
-								</p>
-							</article>
+            <ul class="menu-items" id="menuItems">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="icons">
+                <input id="buscador" class="barra" type="text">
+              <button id="lupa" href=""><i class="ico1 fa-solid fa-magnifying-glass"></i></button>
+                <a href=""><i class="ico1 fa-solid fa-user"></i></a>
+                <a href=""><i class="ico1 fa-solid fa-bag-shopping"></i></a>
+            </div>
+        </nav>
+    </header>
 
-						<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contacto</h2>
-								</header>
-								<form action="#" method="post">
-									<div>
-										<div class="row">
-											<div class="col-6 col-12-medium">
-												<input type="text" name="name" placeholder="Nombre" />
-											</div>
-											<div class="col-6 col-12-medium">
-												<input type="text" name="email" placeholder="Correo electrónico" />
-											</div>
-											<div class="col-12">
-												<input type="text" name="subject" placeholder="Asunto" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Mensaje" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Enviar" />
-											</div>
-										</div>
-									</div>
-								</form>
-							</article>
+    <!-- Carrusel -->
+    <section class="carousel-container">
+        <div class="carousel">
+            <div class="slide">
+                <img src="assets/img/carrusel1.jpg" alt="Cerámicas" width="100%">
+                <div class="carousel-text">
+                    <h2>Cerámicas, Arte, Diseños Mágicos</h2>
+                    <p>Zarzamora es una tienda online, un taller de cerámica,<br> 
+                         un estudio y un espacio creativo ubicado en Valparaíso, Chile.</p>
+                    <a href="#" class="button">VER MÁS</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/carrusel2.jpg" alt="Diseños Mágicos" width="100%">
+                <div class="carousel-text2">
+                    <h2>Novedades</h2>
+                    <p>Próximas Eras Zarzamora <br>5 de Octubre</p>
+                    <a href="#" class="button2">UN ADELANTO</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="assets/img/carrusel3.jpg" alt="Taller Zarzamora" width="100%">
+                <div class="carousel-text">
+                    <h2>Descubre nuestros productos</h2>
+                    <p>En nuestro taller, ofrecemos piezas de arcilla vibrantes 
+                        y detalladamente diseñadas,
+                         reflejando nuestra pasión por el arte.</p>
+                    <a href="#" class="button">VER CATÁLOGO</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					</div>
+ 
 
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>&copy; Gabriela GV </li><li>Diseño y Desarrollo: Gabriela</li>
-						</ul>
-					</div>
 
-			</div>
+    <!-- Sección Zarzamorita -->
+    <section class="Mundo-zarzamora">
+        <img src="assets/img/Morita.png" alt="Morita">
+        <h2>Mundo Zarzamorita</h2>
+        <p>Todas nuestras piezas tienen una historia mágica <br> lista para ser descubierta.</p>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Imágenes con hover -->
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="assets/img/Servicio 1.jpg" alt="Pieza 1">
+            <div class="hover-text">PEDIDOS PERSONALIZADOS</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/img/Servicio 2.jpg" alt="Pieza 2">
+            <div class="hover-text">TALLERES</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/img/servicio 3.jpg" alt="Pieza 3">
+            <div class="hover-text">ARRIENDO DE HORNOS</div>
+        </div>
+    </section>
 
-	</body>
+    <section class="about">
+        <div class="container">
+            <div class="text-content">
+                <h1>Somos 2 hermanas creando magia</h1><br>
+                <p>Fundadoras del Taller de cerámica Zarzamora, un negocio 
+                    local lleno de amor y creatividad. 
+                    Francisca y Gabriela.</p><br><br>
+                <button class="cta-button">CONÓCENOS</button>
+            </div>
+            <div class="image-content">
+                <img class="morita-comenta" src="assets/img/Abuela.png" alt="Abuela">
+            </div>
+        </div>
+        
+     </section>
+
+     
+     <section class="duende">
+        <div class="section-content">
+            <div class="text-final">
+                <h2>¡Cada pieza está esperando encontrar un lugar especial en tu hogar!</h2><br><br>
+                <button class="cta-button">ESCRÍBENOS</button>
+            </div>
+            <div class="image-duende">
+            </div>
+        </div>
+    </section>
+
+    <section class="franja-final">
+        <div class="franja-text">
+            Negocio local propiedad de hermanas
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section1">
+                <p><a href="#">Contacto</a></p>
+                <p><a href="#">Preguntas Frecuentes</a></p>
+            </div>
+            <div class="footer-section social-icons">
+                <a href="#"><img src="assets/img/icono tiktok.png" alt="TikTok"></a>
+                <a href="#"><img src="assets/img/icono instagram.png" alt="Instagram"></a>
+            </div>
+            <div class="footer-right">
+                <p><a href="#">Envío</a></p>
+                <p><a href="#">Políticas de cambios</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel .slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 3000); // Cambia de slide cada 5 segundos
+
+        // Inicializa el primer slide visible
+        showSlide(currentSlide);
+
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
 </html>
+
