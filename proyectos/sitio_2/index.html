@@ -1,183 +1,254 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Sitio 2</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Estilos adicionales para personalización */
-			body {
-				background-color: #eceff1;
-				color: #37474f;
-				font-family: 'Open Sans', sans-serif;
-			}
-			#wrapper .wrapper.style1 h2, 
-			#wrapper .wrapper.style2 h2, 
-			#wrapper .wrapper.style3 h2 {
-				font-size: 2.3em;
-				color: #00796b;
-			}
-			#wrapper .button {
-				background: #ff7043;
-				color: #fff;
-				border-radius: 5px;
-			}
-			#wrapper .button:hover {
-				background: #f4511e;
-			}
-			#wrapper #sidebar nav ul li a {
-				color: #546e7a;
-			}
-		</style>
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - CorpRide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar">
+            <img class="logo" src="./img/logo.svg" alt="">
+            
+            <ul class="nav-links">
+                <li><a href="#services">Servicio</a></li>
+                <li><a href="#features">Características</a></li>
+                <li><a href="#services">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Inicio</a></li>
-							<li><a href="#one">Sobre Nosotros</a></li>
-							<li><a href="#two">Servicios</a></li>
-							<li><a href="#three">Contáctanos</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <!-- Resto de la página aquí -->
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-container">
+        <!-- Columna Izquierda -->
+        <div class="hero-left">
+            <h1>CorpRide: Optimiza tus traslados corporativos con seguridad y eficiencia</h1>
+            <p class="sub">Gestiona el transporte de tus empleados con tecnología avanzada, reduciendo costos y garantizando seguridad.</p>
+        </div>
+        <!-- Columna Derecha -->
+        <div class="hero-right">
+            <img src="./img/f1.jpeg" alt="Imagen de ejemplo" class="hero-image">
+            <a href="#contact" class="btn-floating">Solicita una Demostración</a>
+        </div>
+    </div>
+</section>
+<!-- Beneficios -->
+<section id="benefits">
+    <h2>Beneficios de CorpRide</h2>
+    <br><br>
+    <div class="benefit-container">
+        <!-- Columna 1 -->
+        <div class="benefit-item">
+            <i class="icon1 fa fa-clock-o" aria-hidden="true"></i>
+            <h3>Optimización de Costo y Tiempo</h3>
+            
+            <p>optimiza tus recursos y maximiza el tiempo, asegurando un rendimiento eficiente.</p>
+        </div>
+        <!-- Columna 2 -->
+        <div class="benefit-item">
+            <i class="icon1 fa fa-plus" aria-hidden="true"></i>
+            <h3>Comodidad</h3>
+            <p>La experiencia de usuario de CorpRide está diseñada para ser intuitiva y cómoda.</p>
+        </div>
+        <!-- Columna 3 -->
+        <div class="benefit-item">
+            <i class="icon1 fa fa-shield" aria-hidden="true"></i>
+            <h3>Seguridad</h3>
+            <p>Tu información y la de tus usuarios están siempre protegidas con las mejores prácticas de seguridad.</p>
+        </div>
+    </div>
+</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Características Tecnológicas -->
+<section id="features">
+    <!-- Imagen de ancho completo -->
+    <div class="feature-image-container">
+        <img src="./img/f2.jpeg" alt="Características Tecnológicas" class="feature-image">
+    </div>
+    <div class="feature-content">
+        <!-- Columna 1 -->
+        <div class="feature-item">
+            <i class="icon1 fa fa-car" aria-hidden="true"></i>
+            <h3>Gestión de la Flota</h3>
+            <p>Optimiza la administración de tus vehículos y recursos de manera eficiente y segura.</p>
+        </div>
+        <!-- Columna 2 -->
+        <div class="feature-item">
+            <i class="icon1 fa fa-globe" aria-hidden="true"></i>
+            <h3>Monitoreo del Viaje</h3>
+            <p>Obtén información precisa y actualizada sobre cada trayecto para mejorar la experiencia del usuario.</p>
+        </div>
+        <!-- Columna 3 -->
+        <div class="feature-item">
+            <i class="icon1 fa fa-building-o" aria-hidden="true"></i>
+            <h3>Integraciones Corporativas</h3>
+            <p>Conecta fácilmente con otras plataformas y sistemas empresariales para maximizar tu alcance.</p>
+        </div>
+    </div>
+</section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Bienvenidos</h1>
-							<p>Diseñamos experiencias digitales con un enfoque en innovación y creatividad. <br /> Conoce más sobre lo que hacemos y cómo podemos ayudarte.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Descubre más</a></li>
-							</ul>
-						</div>
-					</section>
+<div class="bg1">
 
-				<!-- Servicios -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/custom01.jpg" alt="Servicio 1" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Transformación Digital</h2>
-									<p>Ofrecemos soluciones personalizadas para llevar tu negocio al mundo digital, desde aplicaciones hasta sitios web.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Más detalles</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/custom02.jpg" alt="Servicio 2" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Optimización de Procesos</h2>
-									<p>Optimiza tu flujo de trabajo con nuestras herramientas de automatización que simplifican tareas repetitivas.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Más detalles</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/custom03.jpg" alt="Servicio 3" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Consultoría Estratégica</h2>
-									<p>Asesoría para maximizar tus resultados en marketing digital, operaciones y experiencia de usuario.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Más detalles</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+<!-- Testimonios -->
+<section id="testimonials">
+    <div class="testimonial-container">
+        <!-- Columna Izquierda -->
+        <div class="testimonial-left">
+            <h2>Satisfecho</h2>
+            <p>"El impacto de CorpRide en nuestro flujo de trabajo ha sido simplemente sorprendente. No podríamos estar más satisfechos."</p>
+            <a href="#cta" class="btn-primary">Ver Más Testimonios</a>
+        </div>
+        <!-- Columna Derecha -->
+        <div class="testimonial-right">
+            <img src="./img/forrest.jpg" alt="Estudios de Caso" class="testimonial-image">
+        </div>
+    </div>
+</section>
 
-				<!-- Contáctanos -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contáctanos</h2>
-							<p>Nos encantaría escuchar de ti. Completa el siguiente formulario para que podamos trabajar juntos en tu próximo proyecto.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Nombre</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Correo Electrónico</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Mensaje</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Enviar Mensaje" class="button submit" /></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Dirección</h3>
-											<span>Calle Ejemplo 123<br />
-											Ciudad Ejemplo, País<br />
-											Código Postal</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">contacto@ejemplo.com</a>
-										</li>
-										<li>
-											<h3>Teléfono</h3>
-											<span>+123 456 7890</span>
-										</li>
-										<li>
-											<h3>Redes Sociales</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+</div>
 
-			</div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Proyecto Personalizado. Todos los derechos reservados.</li><li>Diseño por Tu Equipo</li>
-					</ul>
-				</div>
-			</footer>
+<!-- Procesos de Implementación -->
+<section id="process">
+    <div class="process-container">
+        <!-- Columna Izquierda -->
+        <div class="process-left">
+            <h2>Procesos de Implementación</h2>
+            <p>Nuestra implementación es rápida y efectiva, asegurando que puedas integrarte y operar con facilidad. Ofrecemos un soporte completo para garantizar una transición sin problemas.</p>
+        </div>
+        <!-- Columna Derecha -->
+        <div class="process-right">
+            <div class="process-item">
+                <i class="icon1 fa fa-search" aria-hidden="true"></i>
+                <h3>Proceso 1: Evaluación Inicial</h3>
+                <p>Realizamos un análisis de tus necesidades y creamos un plan personalizado.</p>
+            </div>
+            <div class="process-item">
+                <i class="icon1 fa fa-cog" aria-hidden="true"></i>
+                <h3>Proceso 2: Configuración</h3>
+                <p>Configuramos el sistema de acuerdo a tus requerimientos específicos.</p>
+            </div>
+            <div class="process-item">
+                <i class="icon1 fa fa-comments" aria-hidden="true"></i>
+                <h3>Proceso 3: Integración y Soporte</h3>
+                <p>Integramos la solución con tus plataformas existentes y ofrecemos soporte continuo.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+<div class="bg1">
+
+
+<!-- Preguntas Frecuentes -->
+<section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq-container">
+        <details>
+            <summary>¿Qué servicios de transporte ofrecen?</summary>
+            <p>Ofrecemos transporte de carga, transporte de pasajeros y servicios personalizados según las necesidades de tu empresa.</p>
+        </details>
+        <details>
+            <summary>¿Cómo se calcula el costo del servicio?</summary>
+            <p>El costo se calcula según la distancia, el tipo de carga y el volumen de la misma. Contáctanos para una cotización personalizada.</p>
+        </details>
+        <details>
+            <summary>¿El servicio está disponible las 24 horas?</summary>
+            <p>Sí, nuestro servicio de transporte está disponible las 24 horas, los 7 días de la semana.</p>
+        </details>
+        <details>
+            <summary>¿Ofrecen seguimiento en tiempo real?</summary>
+            <p>Sí, todos nuestros servicios cuentan con monitoreo en tiempo real para mantenerte informado sobre la ubicación y el estado de tu envío.</p>
+        </details>
+        <details>
+            <summary>¿Hay soporte disponible en caso de incidencias?</summary>
+            <p>Contamos con un equipo de soporte que está disponible en todo momento para atender cualquier incidencia que pueda surgir.</p>
+        </details>
+    </div>
+</section>
+</div>
+
+
+
+<!-- Llamado a la Acción Secundario -->
+<section id="services">
+    <div class="cta-secondary-container">
+        <!-- Columna Izquierda: Imagen -->
+        <div class="cta-left">
+            <img src="./img/f3.jpeg" alt="Imagen de Llamado a la Acción" class="cta-image">
+        </div>
+        <!-- Columna Derecha: Formulario -->
+        <div class="cta-right">
+            <h2>Suscríbete para Más Información</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje (opcional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <div class="subscription-checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe" required>
+                    <label for="subscribe">Acepto recibir información y promociones.</label>
+                </div>
+
+                <button type="submit" class="btn-primary">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Pie de Página (Footer) -->
+<footer id="footer">
+    <div class="footer-container">
+        <!-- Columna de Información de Contacto -->
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Email: contacto@CorpRide.com</p>
+            <a href="#">Política de Privacidad</a><br>
+            <a href="#">Términos de Servicio</a>
+        </div>
+        <!-- Columna Central con el Logo -->
+        <div class="footer-column">
+            <img class="logo" src="./img/logo.svg" alt="">
+            
+        </div>
+        <!-- Columna de Redes Sociales -->
+        <div class="footer-column">
+            <h3>Síguenos</h3>
+            <a href="#">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                Facebook
+            </a><br>
+            <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                Twitter
+
+            </a><br>
+            <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                LinkedIn
+
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
 </html>
